@@ -21,8 +21,8 @@ list.style.alignItems = 'center';
 list.style.flexWrap = 'wrap';
 const markup = images
   .map(
-    image =>
-      `<li class="item"><img src="${image.url}" alt="${image.alt}" width=300></li>`,
+    ({ url, alt }) =>
+      `<li class="item"><img src="${url}" alt="${alt}" width=300></li>`,
   )
   .join('');
 list.insertAdjacentHTML('beforeend', markup);
