@@ -18,6 +18,7 @@ list.style.listStyle = 'none';
 list.style.display = 'flex';
 list.style.justifyContent = 'space-evenly';
 list.style.alignItems = 'center';
+list.style.flexWrap = 'wrap';
 const markup = images
   .map(
     image =>
