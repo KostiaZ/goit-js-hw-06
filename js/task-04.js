@@ -5,7 +5,6 @@ btnIncr.addEventListener('click', add);
 btnDecr.addEventListener('click', remove);
 
 let counterValue = 0;
-count.textContent = counterValue;
 
 function add() {
   counterValue += 1;
