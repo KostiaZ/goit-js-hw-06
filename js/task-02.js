@@ -12,4 +12,4 @@ const li = document.createElement('li');
 li.textContent();
 list.append(li);
 console.log(list);
-// console.log(li);
+console.log(li);

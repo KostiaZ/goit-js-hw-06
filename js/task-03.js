@@ -14,11 +14,14 @@ const images = [
 ];
 
 const list = document.querySelector('.gallery');
+list.style.listStyle = 'none';
+list.style.display = 'flex';
+list.style.justifyContent = 'space-evenly';
+list.style.alignItems = 'center';
 const markup = images
   .map(
     image =>
       `<li class="item"><img src="${image.url}" alt="${image.alt}" width=300></li>`,
   )
   .join('');
-console.log(markup);
 list.insertAdjacentHTML('beforeend', markup);
